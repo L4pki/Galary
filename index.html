@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="./pages/index.css" >
 </head>
 <body class="root">
-  <h1 class="root__title">Пример создания галереи</h1>
+  <h1 class="root__title">Галерея</h1>
   <section class="profile profile_unvisiable">
     <h2 class="profile__title">Профиль</h2>
     <img src="./images/lena_color.gif" alt="Фото" class="profile__image ">
@@ -28,8 +28,28 @@
     <button class="profile__button" type="button">Отправить</button>
   </section>
 
+
+  <div id="myModal" class="modal">
+  
+   
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">&times;</span>
+      </div>
+      <div class="modal-body">
+        <image class="zoom-image" src="https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kamchatka.jpg"> </image>
+      </div>
+      <div class="modal-footer">
+      </div>
+    </div>
+  
+  </div>
+
+
   <div class="popup">
-    <h2 class="popup__title">Добавить изображение</h2>   
+    <h2 class="popup__title">Добавить изображение
+      
+    </h2>   
     <form class="popup__form" id="form1">
       <input
         class="popup__input"
@@ -48,6 +68,7 @@
       <button class="popup__button" type="submit">Отправить</button>
     </form> 
   </div>
+ 
   <section class="cards">
     
   </section>
