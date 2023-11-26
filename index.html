@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Example JS</title>
+  <link rel="stylesheet" href="./pages/index.css" >
+</head>
+<body class="root">
+  <h1 class="root__title">Пример создания галереи</h1>
+  <section class="profile profile_unvisiable">
+    <h2 class="profile__title">Профиль</h2>
+    <img src="./images/lena_color.gif" alt="Фото" class="profile__image ">
+    <input
+      class="profile__input"
+      placeholder="Имя"
+      type="text"
+      id="profile__input_name"
+      name="profileName"
+    >
+    <input
+      class="profile__input"
+      placeholder="О себе"
+      type="text"
+      id="profile__input_about"
+      name="profileAbout"
+    >
+    <button class="profile__button" type="button">Отправить</button>
+  </section>
+
+  <div class="popup">
+    <h2 class="popup__title">Добавить изображение</h2>   
+    <form class="popup__form" id="form1">
+      <input
+        class="popup__input"
+        placeholder="Ссылка"
+        type="text"
+        id="popup__input_link"
+        name="popupLink"
+      >
+      <input
+        class="popup__input"
+        placeholder="Название"
+        type="text"
+        id="popup__input_title"
+        name="popupTitle"
+      >
+      <button class="popup__button" type="submit">Отправить</button>
+    </form> 
+  </div>
+  <section class="cards">
+    
+  </section>
+  <!--card-->
+  <template id="card">
+    <figure class="card" id="#">
+      <button type="submit" class="button card__remove"></button>
+      <img class="card__image" src="#" alt="#" id="#card__image" />
+      <figcaption class="card__caption">
+        <h2 class="card__title"></h2>
+        <div class="card__like-block">
+          <button type="button" class="card__like"></button>
+          <p class="card__like-counter"></p>
+        </div>
+      </figcaption>
+    </figure>
+  </template>
+  <script type="module" src="./pages/index.js" ></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+
+.profile{
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 10px auto;
+  outline: red solid 1px;
+}
+
+.profile__title{
+  margin: 20px auto 0 auto;
+}
+
+.profile__image{
+  max-width: 200px;
+  margin: 20px auto 0 auto;
+}
+
+.profile__image_unvisiable{
+  opacity: 0;
+}
+
+.profile__input{
+  margin: 20px auto 0 auto;
+
+}
+
+.profile__button{
+  margin: 20px auto 0 auto;
+  
+}
+
+.profile_unvisiable{
+  display: none;
+}
