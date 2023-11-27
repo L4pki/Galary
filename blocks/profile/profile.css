@@ -1,35 +1,44 @@
 
 .profile{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   max-width: 500px;
   margin: 10px auto;
   outline: red solid 1px;
+  border-radius: 5px;
+  background-color: blanchedalmond;
 }
 
 .profile__title{
-  margin: 20px auto 0 auto;
+  display: block;
+  margin: 20px 0 0 10px;
 }
 
 .profile__image{
   max-width: 200px;
-  margin: 20px auto 0 auto;
+  margin: 20px;
 }
+.profImgBlock{
+  max-width: 300px;
+  display:inline;
 
+}
 .profile__image_unvisiable{
   opacity: 0;
 }
 
+.input-profile{
+  display:inline;
+  max-width: 300px;
+}
 .profile__input{
-  margin: 20px auto 0 auto;
-
+  margin: 20px 0 0 10px;
 }
 
 .profile__button{
-  margin: 20px auto 0 auto;
-  
+  margin: 20px 0 0 10px;
 }
 
 .profile_unvisiable{
-  display: none;
+  display: static;
 }
