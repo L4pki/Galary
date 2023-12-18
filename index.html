@@ -7,40 +7,59 @@
   <link rel="stylesheet" href="./pages/index.css" >
 </head>
 <body class="root">
-  <h1 class="root__title">Галерея</h1>
-  <section class="profile profile_unvisiable">
-    <section class="profImgBlock">
-      <img src="./images/lena_color.gif" alt="Фото" class="profile__image ">
-    </section>
-    
-    <section class="input-profile">
-      <h2 class="profile__title">Профиль</h2>
+
+  <button id="myBtnProfile">Профиль</button>
+
+
+<div id="myProfile" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+    </div>
+    <div class="modal-body">
+      <span class="closeProfile">&times;</span>
+    <section class="profile profile_unvisiable">
+      <section class="profImgBlock">
+        <img src="./images/lena_color.gif" alt="Фото" class="profile__image ">
+      </section>
+      
+      <section class="input-profile">
+        <h2 class="profile__title">Профиль</h2>
+        <input
+        class="profile__input"
+        placeholder="Имя"
+        type="text"
+        id="profile__input_name"
+        name="profileName"
+      >
       <input
-      class="profile__input"
-      placeholder="Имя"
-      type="text"
-      id="profile__input_name"
-      name="profileName"
-    >
-    <input
-      class="profile__input"
-      placeholder="О себе"
-      type="text"
-      id="profile__input_about"
-      name="profileAbout"
-    >
-    <button class="profile__button" type="button">Отправить</button>
+        class="profile__input"
+        placeholder="О себе"
+        type="text"
+        id="profile__input_about"
+        name="profileAbout"
+      >
+      <button class="profile__button" type="button">Отправить</button>
+      </section>
+      
     </section>
-    
-  </section>
+    </div>
+    <div class="modal-footer">
+    </div>
+  </div>
 
+</div>
+  <div class="Shapka"> 
+    <h1 class="root__title">Галерея</h1>
+    <button id="AddImg">+</button>
+  </div>
+  
 
-  <div id="myModal" class="modal">
+  <div id="myModalImg" class="modal">
   
    
     <div class="modal-content">
       <div class="modal-header">
-        <span class="close">&times;</span>
+        <span class="closeImg">&times;</span>
       </div>
       <div class="modal-body">
         <image class="zoom-image" src="https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kamchatka.jpg"> </image>
@@ -52,29 +71,34 @@
   </div>
 
 
-  <div class="popup">
-    <h2 class="popup__title">Добавить изображение
-      
-    </h2>   
-    <form class="popup__form" id="form1">
-      <input
-        class="popup__input"
-        placeholder="Ссылка"
-        type="text"
-        id="popup__input_link"
-        name="popupLink"
-      >
-      <input
-        class="popup__input"
-        placeholder="Название"
-        type="text"
-        id="popup__input_title"
-        name="popupTitle"
-      >
-      <button class="popup__button" type="submit">Отправить</button>
-    </form> 
+  
+  <div id="AddImgId" class="AddImgId">
+    <span class="closeAddImg">&times;</span>
+    
+    <div class="popup">
+      <h2 class="popup__title">Добавить изображение
+        
+      </h2>   
+      <form class="popup__form" id="form1">
+        <input
+          class="popup__input"
+          placeholder="Ссылка"
+          type="text"
+          id="popup__input_link"
+          name="popupLink"
+        >
+        <input
+          class="popup__input"
+          placeholder="Название"
+          type="text"
+          id="popup__input_title"
+          name="popupTitle"
+        >
+        <button class="popup__button" type="submit">Отправить</button>
+      </form> 
+    </div>
   </div>
- 
+
   <section class="cards">
     
   </section>

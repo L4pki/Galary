@@ -12,15 +12,15 @@ let lastId = 0;
 function getNewCardId(){
   return ++lastId;
 }
-var modal = document.getElementById('myModal');
+var modalImg = document.getElementById('myModalImg');
 var btn = document.getElementById("myBtn");
-var span = document.getElementsByClassName("close")[0];
+var span = document.getElementsByClassName("closeImg")[0];
 span.onclick = function() {
-    modal.style.display = "none";
+  modalImg.style.display = "none";
 }
 window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
+    if (event.target == modalImg) {
+      modalImg.style.display = "none";
     }
 }
 function checkClickCard(elem){
@@ -29,7 +29,7 @@ function checkClickCard(elem){
 function zoomCard(){
   let zoom_image=document.querySelector(".zoom-image");
   zoom_image.src=this.src;
-  modal.style.display = "block";
+  modalImg.style.display = "block";
 }
 function createEventLForDelete(elem){
   elem.addEventListener('click', removeParent);
@@ -127,4 +127,56 @@ function removeParent(){
   let revDiv = this.parentElement;
   revDiv.remove();
   deleteFromCards(this.parentElement.id);
+}
+
+
+
+
+var modalProfile = document.getElementById('myProfile');
+var btnProfile = document.getElementById("myBtnProfile");
+var spanProfile = document.getElementsByClassName("closeProfile")[0];
+btnProfile.onclick = function() {
+  modalProfile.style.display = "block";
+}
+spanProfile.onclick = function() {
+  modalProfile.style.display = "none";
+}
+window.onclick = function(event) {
+  console.log(event.target);
+    if (event.target == modalProfile) {
+      modalProfile.style.display = "none";
+    }
+}
+
+
+var modalAdd = document.getElementById('AddImgId');
+
+
+var AddImg = document.getElementById("AddImg");
+
+
+var spanAdd = document.getElementsByClassName("closeAddImg")[0];
+
+
+AddImg.onclick = function() {
+  modalAdd.style.display = "block";
+}
+
+
+spanAdd.onclick = function() {
+  modalAdd.style.display = "none";
+}
+
+
+window.onclick = function(event) {
+    if (event.target == modalAdd) {
+      console.log(event.target);
+      modalAdd.style.display = "none";
+    }
+    if (event.target == modalProfile) {
+      modalProfile.style.display = "none";
+    }
+    if (event.target == modalImg) {
+      modalImg.style.display = "none";
+    }
 }
